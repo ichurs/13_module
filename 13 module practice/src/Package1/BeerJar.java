@@ -19,7 +19,7 @@ public class BeerJar {
 
     void refill(int beer){
         synchronized (lock) {
-            this.beer += beer;
+            this.beer = beer;
         }
     }
 
